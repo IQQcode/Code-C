@@ -99,48 +99,54 @@
 
 //2.输出乘法口诀表
 
-//#include<stdio.h>
-//int main(void)
-//{
-//	int i=0;
-//	int j=0;
-//	int s=0;
-//	printf("输出乘法口诀表：");
-//
-//	for(i=1;1<=9;i++)
-//	{
-//		for(j=1;j<=i;j++)
-//		{
-//			s=i*j;
-//			printf("%d*%d=%d",i,j,s);
-//		}
-//		printf("\n");
-//	}
-//
-//	return 0;
-//}
+#include<stdio.h>
+int main(void)
+{
+	int i=0;
+	int j=0;
+	int s=0;
+	printf("输出乘法口诀表：\n\n");
+
+	for(i=1;i<=9;i++)
+	{
+		for(j=1;j<=i;j++)
+		{
+			s = i * j;
+			printf("%2d*%2d=%2d",i,j,s);
+		}
+		printf("\n");
+	}
+
+	return 0;
+}
 
 
 //3.打印100~200之间的素数
 
-#include<stdio.h>
-int main(void)
-{
-
-
- int i = 0, n = 0;                //定义两个整形变量，一个用来控制循环次数，一个用来进行取模运算
- for (i = 100; i <= 200; i++)     //建立一个从100-200的for循环
- {
-    for (n = 2; n <= i / 2; n++)  //开始进行取模运算'n<=i/2'可以减少一半运算量
-    {
-        if (i%n == 0)             
-            break;               //非素数跳出循环
-    }
-    if (n > i / 2)               //符合余数不为0条件且‘n>i/2’即可输出
-    {
-        printf("%5d", i);
-    }
-}
-
-	return 0;
-}
+//#include<stdio.h>
+//int main(void)
+//{
+//
+//
+// int i = 0, n = 0; 
+// 
+//                                 //定义两个整形变量，一个用来控制循环次数，一个用来进行取模运算
+// for (i = 100; i <= 200; i++)     //建立一个从100-200的for循环
+// {                               //或者  for(i=101;i<=200;i+2 )
+//
+//    for (n = 2; n <= i / 2; n++)  //让i与2——i-1之间的数求余运算；
+//		                         //或者 for("n=2 ;n<=sqrt(i) ; n++")
+//		                         //145行改为 if(n >sqrt(i))
+//								 //开始进行取模运算'n<=i/2'可以减少一半运算量
+//    {
+//        if ( i%n == 0)             
+//            break;               //非素数跳出循环
+//    }
+//    if (n > i / 2)               //符合余数不为0条件且‘n>i/2’即可输出
+//    {
+//        printf("%5d", i);
+//    }
+//}
+//
+//	return 0;
+//}
