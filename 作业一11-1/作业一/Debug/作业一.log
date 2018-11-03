@@ -1,2 +1,6 @@
 ﻿  10-31.c
-  作业一.vcxproj -> F:\3Visual C 2010\Code-44.c\作业一11-1\Debug\作业一.exe
+e:\code-n1\code-n1\作业一11-1\作业一\10-31.c(12): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  d:\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(1274): note: 参见“scanf”的声明
+e:\code-n1\code-n1\作业一11-1\作业一\10-31.c(20): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  d:\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(1274): note: 参见“scanf”的声明
+  作业一.vcxproj -> E:\Code-N1\Code-N1\作业一11-1\Debug\作业一.exe
