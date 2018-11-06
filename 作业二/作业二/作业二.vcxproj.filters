@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="11-05.c">
+    <ClCompile Include="11-6.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
