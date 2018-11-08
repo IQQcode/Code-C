@@ -1,0 +1,3 @@
+﻿  11-6.c
+e:\code-n1\code-n1\作业三\作业三\11-6.c(17): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 1 拥有了类型“int *”
+  作业三.vcxproj -> E:\Code-N1\Code-N1\作业三\Debug\作业三.exe

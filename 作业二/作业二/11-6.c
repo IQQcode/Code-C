@@ -3,7 +3,7 @@
 #include<stdlib.h>
 //求俩个数的最大公约数、最小公倍数：
 //更相减损术
-int main()
+/*int main()
 {
 	int n, a, b, c;
 	n = 1;
@@ -31,74 +31,75 @@ int main()
 	}
 	printf("\n最大公约数是:%d\n", b);
 	system("pause");
+}*/
+
+
+
+/*int main()
+{
+	int m= 0;
+	int n = 0;
+	int r = 0;
+	int num1 = 0, num2 = 0, dou = 0;
+	printf("请输入要求最大公因数的俩个数值：\n");
+	scanf("%d %d", &m, &n);
+
+	num1 = m;
+	num2 = n;
+	
+	while( n % m )   //不判断 a,b 的大小，直接比较；小的对大的取余（9 % 21 == 9）
+	{
+		r = n % m;
+		n = m;
+		m = r;
+	}
+	printf("俩数的最大公因数是：%d\n", m);     //被模的数为最大公约数；
+
+	dou = (num1*num2) / m;           //最小公倍数==俩数的乘积 / 最大公约数；
+	printf("俩个数的最小公倍数是：%d\n", dou);
+
+	system("pause");
+    return 0;
+
+}*/
+
+
+
+
+int main()
+{
+	int a = 0, b = 0, c = 0, d = 0;
+	int dou = 0;
+	int num1 = 0, num2 = 0;
+	printf("请输入要求最大公因数的俩个数值：\n");
+	scanf("%d %d", &a, &b);
+	num1 = a;
+	num2 = b;
+	if (b > a)           //保证输出 a > b；
+	{
+		//num1 = a;     //为什么会出问题？？？
+		//num2 = b;
+
+		c = b;
+		b = a;
+		a = c;
+	}
+	d = a % b;
+	while (d != 0)
+	{
+		a = b;
+		b = d;
+		d = a % b;
+
+	}
+	printf("俩数个的最大公因数是：%d\n", b);
+
+	dou = (num1*num2) / b;
+	printf("俩个数的最小公倍数是：%d\n", dou);
+
+	system("pause");
+	return 0;
 }
-
-
-
-//int main()
-//{
-//	int m= 0;
-//	int n = 0;
-//	int r = 0;
-//	int num1 = 0, num2 = 0, dou = 0;
-//	printf("请输入要求最大公因数的俩个数值：\n");
-//	scanf("%d %d", &m, &n);
-//
-//	num1 = m;
-//	num2 = n;
-//
-//	while( n % m )
-//	{
-//		r = n % m;
-//		n = m;
-//		m = r;
-//	}
-//	printf("俩数的最大公因数是：%d\n", m);
-//
-//	dou = (num1*num2) / m;
-//	printf("俩个数的最小公倍数是：%d\n", dou);
-//
-//	system("pause");
-//    return 0;
-//
-//}
-
-
-
-
-//int main()
-//{
-//	int a = 0, b = 0, c = 0, d = 0;
-//	int dou = 0;
-//	int num1 = 0, num2 = 0;
-//	printf("请输入要求最大公因数的俩个数值：\n");
-//	scanf("%d %d", &a, &b);
-//	num1 = a;
-//	num2 = b;
-//	if (b > a)
-//	{
-//		//num1 = a;     //为什么会出问题？？？
-//		//num2 = b;
-//
-//		c = b;
-//		b = a;
-//		a = c;
-//	}
-//	d = a % b;
-//	while (d != 0)
-//	{
-//		a = b;
-//		b = d;
-//		d = a % b;
-//	}
-//	printf("俩数个的最大公因数是：%d\n", b);
-//
-//	dou = (num1*num2) / b;
-//	printf("俩个数的最小公倍数是：%d\n", dou);
-//
-//	system("pause");
-//	return 0;
-//}
 
 
 
@@ -146,7 +147,9 @@ int main()
 	for (i = 0; i <= sizeof(arr) / sizeof(arr[0]); i++)
 	{
 		if (arr[i] > max)
+		  {
 			max = arr[i];
+		  }
 	}
 	printf("max=%d\n", max);
 
@@ -173,7 +176,7 @@ int main()
 	//num2 = num1 - num2;
 	//num1 = num1 - num2;
 
-	//num1 = num1 ^ num2;
+	//num1 = num1 ^ num2;        //相同为0，相异为1；
 	//num2 = num1 ^ num2;
 	//num1 = num1 ^ num2;
 
