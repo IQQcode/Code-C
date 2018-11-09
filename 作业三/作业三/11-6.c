@@ -1,13 +1,32 @@
 #define _CRT_SECURE_NO_WARNINGS 1
 #include<stdio.h>
 #include<stdlib.h>
+#include<math.h>
 
-//计算：1/1 - 1/2 + 1/3 -1/4......+1/99 - 1/100
+//计算：1/1 - 1/2 + 1/3 -1/4......+1/99 - 1/10
+int main()
+{
+	double i = 0.0, sum = 0.0, term = 1.0;
+	int flag = 1;
+	while (fabs(term) >= 1e-6)
+	{
+		sum += term;
+		i++;
+		flag = -flag;
+		term = flag / i;
+
+	}
+	printf("sum=%10.8f\n", sum);
+
+	system("pause");
+	return 0;
+}
+
 
 
 
 //交换俩个数组的内容：
-int main()
+/*int main()
 {
 	int i = 0;
 	int temp = 0;
@@ -34,7 +53,7 @@ int main()
 	}
 	system("pause");
 	return 0;
-}
+}*/
 
 
 //统计1到100中9出现的个数：
