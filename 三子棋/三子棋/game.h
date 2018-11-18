@@ -1,9 +1,11 @@
 #define _CRT_SECURE_NO_WARNINGS 1
-#ifndef __TEST_H_
-#define __TEST_H_
+#ifndef __GAME_H__
+#define __GAME_H__
 
 #include<stdio.h>
+#include<stdlib.h>
 #include<string.h>
+#include<time.h>
 
 #define ROW 3
 #define COL 3
@@ -16,6 +18,11 @@
 
  void PlayerMove(char board[ROW][COL], int row, int col);
 
+ void ComputerMove(char board[ROW][COL], int row,int col);
 
-#endif   //__TEST_H__
+ char Judge(char board[ROW][COL],int row,int col);
 
+ int DogFall(char board[ROW][COL], int row, int col);
+
+
+#endif //__GAME_H__
