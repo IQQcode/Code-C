@@ -99,86 +99,72 @@ void ComputerMove(char board[ROW][COL], int row, int col)
 	}
 }
 
-//判断每走一步的输赢：
-//char Judge(char board[ROW][COL], int row, int col)
-//{
-//	int i = 0;
-//	int j = 0;
-//	for (i = 0; i < row; i++)
-//	{
-//		if (board[i][0] == board[i][1] && board[i][1] == board[i][2] && board[i][0] != ' ')
-//		{
-//			return board[i][0];
-//		}
-//	}
-//	for (j = 0; j < col; j++)
-//	{
-//		if (board[0][j] == board[1][j] && board[1][j] == board[2][j] && board[0][j] != ' ')
-//		{
-//			return board[0][j];
-//		}
-//	}
-//	if (board[0][0] == board[1][1] && board[1][1] == board[2][2] && board[1][1] != ' ')
-//	{
-//		return board[0][0];
-//	}
-//	if (board[0][2] == board[1][1] && board[1][1] == board[2][0] && board[1][1] != ' ')
-//	{
-//		return board[0][2];
-//	}
-
-
-char Judge(char board[ROW][COL], int row, int col)
+void  Player1Move(char board[ROW][COL], int row, int col)
 {
-	int i = 0, a = 0;
-	int j = 0;
-	for (i = 0; i < row; i++)
+	int x = 0;
+	int y = 0;
+	printf("玩家1走>:");
+
+	while (1)
 	{
-		while (a < col)
+		printf("请输入要放置棋子的坐标>>-:");
+		scanf("%d%d", &x, &y);
+		if (x >= 1 && x <= row && y >= 1 && y <= col)
 		{
-			if (board[i][a] == board[i][a + 1] && board[i][a] != ' ')
+			if (board[x - 1][y - 1] == ' ')
 			{
-				return board[i][0];
+				board[x - 1][y - 1] = 'X';
+				break;
 			}
-			a++;
+			else
+			{
+				printf("这里有棋子了，不妨换个地方吧!^-^\n");
+			}
+
 		}
-	}
-	for (j = 0; j < col; j++)
-	{
-		while (a < row)
+		else
 		{
-			if (board[a][j] == board[a+1][j] && board[a][j] != ' ')
-			{
-				return board[0][j];
-			}
-			a++;
+			printf("输入错误，请重新输入，好好看看棋盘吧^-^\n\n");
 		}
 	}
 
-	if (board[0][0] == board[1][1] && board[1][1] == board[2][2] && board[1][1] != ' ')
-		{
-		    return board[0][0];
-		}
-	if (board[0][2] == board[1][1] && board[1][1] == board[2][0] && board[1][1] != ' ')
-			{
-				return board[0][2];
-			}
-
-
-	//判断平局：
-	if (DogFall(board, ROW, COL) == 1)     //棋盘满了返回1.没满返回0；
-	{
-		return '=';
-	}
-	//没人赢，没有平局，游戏继续；
-	else
-	{
-		return ' ';
-	}
 }
 
+
+void  Player2Move(char board[ROW][COL], int row, int col)
+{
+	int x = 0;
+	int y = 0;
+	printf("玩家2走>:");
+
+	while (1)
+	{
+		printf("请输入要放置棋子的坐标>>-:");
+		scanf("%d%d", &x, &y);
+		if (x >= 1 && x <= row && y >= 1 && y <= col)
+		{
+			if (board[x - 1][y - 1] == ' ')
+			{
+				board[x - 1][y - 1] = '*';
+				break;
+			}
+			else
+			{
+				printf("这里有棋子了，不妨换个地方吧!^-^\n");
+			}
+
+		}
+		else
+		{
+			printf("输入错误，请重新输入，好好看看棋盘吧^-^\n\n");
+		}
+	}
+
+}
+
+
 //遍历棋盘，看是否满了：
-int DogFall(char board[ROW][COL], int row, int col)
+static int DogFall(char board[ROW][COL], int row, int col)
 {
 	int i = 0;
 	int j = 0;
@@ -194,3 +180,76 @@ int DogFall(char board[ROW][COL], int row, int col)
 	}
 	return 1;
 }
+
+//判断每走一步的输赢：
+char Judge(char board[ROW][COL], int row, int col)
+{
+	int i = 0;
+	int j = 0;
+	for (i = 0; i < row; i++)
+	{
+		if (board[i][0] == board[i][1] && board[i][1] == board[i][2] && board[i][0] != ' ')
+		{
+			return board[i][0];
+		}
+	}
+	for (j = 0; j < col; j++)
+	{
+		if (board[0][j] == board[1][j] && board[1][j] == board[2][j] && board[0][j] != ' ')
+		{
+			return board[0][j];
+		}
+	}
+	if (board[0][0] == board[1][1] && board[1][1] == board[2][2] && board[1][1] != ' ')
+	{
+		return board[0][0];
+	}
+	if (board[0][2] == board[1][1] && board[1][1] == board[2][0] && board[1][1] != ' ')
+	{
+		return board[0][2];
+	}
+
+//char Judge(char board[ROW][COL], int row, int col)
+//{
+//	int i = 0;
+//	for (i = 0; i < row; i++)
+//	{
+//		if (board[i][0] == board[i][1] && board[i][1] == board[i][2]
+//			&& board[i][0] != ' ')
+//		{
+//			return board[i][0];
+//		}
+//	}
+//	for (i = 0; i < col; i++)
+//	{
+//		if (board[0][i] == board[1][i] && board[1][i] == board[2][i]
+//			&& board[0][i] != ' ')
+//		{
+//			return board[0][i];
+//		}
+//	}
+//	if (board[0][0] == board[1][1] && board[1][1] == board[2][2]
+//		&& board[1][1] != ' ')
+//	{
+//		return board[1][1];
+//	}
+//	if (board[0][2] == board[1][1] && board[1][1] == board[2][0]
+//		&& board[1][1] != ' ')
+//	{
+//		return board[1][1];
+//	}
+
+
+	//判断平局：
+	if (DogFall(board, ROW, COL) == 1)     //棋盘满了返回1.没满返回0；
+	{
+		return '=';
+	}
+	//没人赢，没有平局，游戏继续；
+	else
+	{
+		return ' ';
+	}
+}
+
+
