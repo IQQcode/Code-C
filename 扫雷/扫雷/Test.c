@@ -16,16 +16,22 @@ void game()
 {
 	char Mine[ROWS][COLS] = { 0 };
 	char Show[ROWS][COLS] = { 0 };
-	InitBoard(Mine, ROWS, COLS, '0');
+	InitBoard(Mine, ROWS, COLS, '0');   //初始化数组
 	InitBoard(Show, ROWS, COLS, '*');
-	DisplayBoard(Mine, ROW, COL);
-	DisplayBoard(Show, ROW, COL);
+	DisplayBoard(Show, ROW, COL);      //打印
 
+	//布置雷
+	SetMine(Mine, ROW, COL);
+	//DisplayBoard(Mine, ROW, COL);
+	
+	//排查雷
+	FindMine(Mine, Show, ROW, COL);
 }
 
 int main()
 {
 	int input = 0;
+	srand((unsigned int)time(NULL));
 	do
 	{
 		menu();
