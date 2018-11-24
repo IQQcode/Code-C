@@ -2,55 +2,55 @@
 #include<stdio.h>
 #include<stdlib.h>
 //#define _CRT_SECURE_NO_WARNINGS
-int main(void)
-
-{
-	int leap, year;
-
-	printf("Please enter the year:");
-
-	scanf("%d", &year);
-
-loop:if (year <= 1000 || year >= 2000)                //判断输入的年份是否符合条件；
-{
-	printf("\nyear is erorr\n\n");
-
-	printf("Please erter again:");
-
-	scanf("%d", &year);
-
-	goto loop;
-}
-
-
-
-	// leap = judge_year(year);      //一、调用子函数；
- //	
- //	
- //	/*if(year%4==0)            //二、if判断
- //	{
- //		if(year%100==0)
- //		{
- //			if(year%400==0)
- //				leap=1;
- //			else
- //				leap=0;
- //		}
- //		else
- //		leap=1;
- //	}
- //	else
- //	leap=0;*/
- //	
- //	
- //	
- //	
- //	
- if((year%4==0 && year%100!=0 )|| (year%400==0))     //三
- 	leap=1;
+//int main(void)
+//
+//{
+//	int leap, year;
+//
+//	printf("Please enter the year:");
+//
+//	scanf("%d", &year);
+//
+//loop:if (year <= 1000 || year >= 2000)                //判断输入的年份是否符合条件；
+//{
+//	printf("\nyear is erorr\n\n");
+//
+//	printf("Please erter again:");
+//
+//	scanf("%d", &year);
+//
+//	goto loop;
+//}
+//
+//
+//
+//	 leap = judge_year(year);      //一、调用子函数；
+// 	
+ 	
+ 	/*if(year%4==0)            //二、if判断
+ 	{
+ 		if(year%100==0)
+ 		{
+ 			if(year%400==0)
+ 				leap=1;
+ 			else
+ 				leap=0;
+ 		}
+ 		else
+ 		leap=1;
+ 	}
  	else
- 	leap=0; 
- //
+ 	leap=0;*/
+ //	
+ //	
+ //	
+ //	
+ //	
+ //if((year%4==0 && year%100!=0 )|| (year%400==0))     //三
+ //	leap=1;
+ //	else
+ //	leap=0; 
+ ////
  //
  //
  //
@@ -71,7 +71,7 @@ loop:if (year <= 1000 || year >= 2000)                //判断输入的年份是否符合条
  //	
  //	
  //	
-	 if (leap == 1)
+	 /*if (leap == 1)
 
 		 printf("%d leap is", year);
 	 else
@@ -80,7 +80,7 @@ loop:if (year <= 1000 || year >= 2000)                //判断输入的年份是否符合条
 	 printf(" a leap year.\n");
 
 	 return 0;
-}
+}*/
 
 
 //2.输出乘法口诀表
@@ -109,7 +109,7 @@ int main(void)
 
 //3.打印100~200之间的素数
 
-/*#include<stdio.h>
+#include<stdio.h>
 int main(void)
 {
 
@@ -135,4 +135,4 @@ int main(void)
 }
 
 	return 0;
-}*/
+}
