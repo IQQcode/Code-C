@@ -1,2 +1,6 @@
 ﻿  11-23.c
+e:\code-n1\code-n1\作业十二\作业十二\11-23.c(24): warning C4013: “Swap”未定义；假设外部返回 int
+e:\code-n1\code-n1\作业十二\作业十二\11-23.c(84): warning C4473: “printf”: 没有为格式字符串传递足够的参数
+  e:\code-n1\code-n1\作业十二\作业十二\11-23.c(84): note: 占位符和其参数预计 1 可变参数，但提供的却是 0 参数
+  e:\code-n1\code-n1\作业十二\作业十二\11-23.c(84): note: 缺失的可变参数 1 为格式字符串“%d”所需
   作业十二.vcxproj -> E:\Code-N1\Code-N1\作业十二\x64\Debug\作业十二.exe
