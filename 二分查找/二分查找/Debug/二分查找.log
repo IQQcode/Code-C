@@ -1,2 +1,7 @@
 ﻿  11-26.c
-  二分查找.vcxproj -> E:\Code-N1\Code-N1\二分查找\Debug\二分查找.exe
+e:\code-n1\code-n1\二分查找\二分查找\11-26.c(62): warning C4047: “函数”:“int *”与“int”的间接级别不同
+e:\code-n1\code-n1\二分查找\二分查找\11-26.c(62): warning C4024: “Found”: 形参和实参 1 的类型不同
+e:\code-n1\code-n1\二分查找\二分查找\11-26.c(62): error C2198: “Found”: 用于调用的参数太少
+e:\code-n1\code-n1\二分查找\二分查找\11-26.c(64): warning C4047: “函数”:“int *”与“int”的间接级别不同
+e:\code-n1\code-n1\二分查找\二分查找\11-26.c(64): warning C4024: “Found”: 形参和实参 1 的类型不同
+e:\code-n1\code-n1\二分查找\二分查找\11-26.c(64): error C2198: “Found”: 用于调用的参数太少
