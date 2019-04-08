@@ -96,7 +96,7 @@ int main()
 {
 	int n = 0;
 	printf("请输入盘子的数目：");
-	scanf("%d", &n);
+	scanf_s("%d", &n);
 	printf("在3根柱子上移动%d个盘子到另一个盘子的步骤为：\n", n);
 	move(n, 'A', 'B', 'C');
 	system("pause");

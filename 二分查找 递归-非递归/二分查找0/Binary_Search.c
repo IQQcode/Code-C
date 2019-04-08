@@ -8,6 +8,7 @@ int Binary_Search(int arr[], int key,int left,int right)
 	while (left <= right)
 	{
 		int mid = left + (right - left) / 2;
+
 		if (arr[mid] > key)
 		{
 			right = mid - 1;
@@ -25,25 +26,25 @@ int Binary_Search(int arr[], int key,int left,int right)
 }
 
 //递归实现
-int Binary_Search(int arr[], int key, int left, int right) {
-	//求中间元素的下标
-	int mid = (left + right) / 2;
-	//数组内不含有指定元素，依据下标的规则，退出
-	if (left > right)
-		return -1;
-	//查找到指定元素
-	if (key == arr[mid]) {
-		return mid;
-		//当查找的元素大于中间下标的元素，则改变开始下标的位置
-	}
-	else if (key > arr[mid]) {
-		return Binary_Search(arr, key, mid + 1, right);
-	}
-	else {
-		//当查找的元素小于中间下标的元素，则改变结束下标的位置
-		return Binary_Search(arr, key, left, mid - 1);
-	}
-}
+//int Binary_Search(int arr[], int key, int left, int right) {
+//	//求中间元素的下标
+//	int mid = (left + right) / 2;
+//	//数组内不含有指定元素，依据下标的规则，退出
+//	if (left > right)
+//		return -1;
+//	//查找到指定元素
+//	if (key == arr[mid]) {
+//		return mid;
+//		//当查找的元素大于中间下标的元素，则改变开始下标的位置
+//	}
+//	else if (key > arr[mid]) {
+//		return Binary_Search(arr, key, mid + 1, right);
+//	}
+//	else {
+//		//当查找的元素小于中间下标的元素，则改变结束下标的位置
+//		return Binary_Search(arr, key, left, mid - 1);
+//	}
+//}
 
 
 int main()
