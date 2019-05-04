@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Hexa", "Hexa\Hexa.vcxproj", "{3C986E55-0D47-4BF7-94F1-4E9AB4EDF3A6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3C986E55-0D47-4BF7-94F1-4E9AB4EDF3A6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{3C986E55-0D47-4BF7-94F1-4E9AB4EDF3A6}.Debug|Win32.Build.0 = Debug|Win32
+		{3C986E55-0D47-4BF7-94F1-4E9AB4EDF3A6}.Release|Win32.ActiveCfg = Release|Win32
+		{3C986E55-0D47-4BF7-94F1-4E9AB4EDF3A6}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
