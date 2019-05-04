@@ -1,0 +1,126 @@
+<!--
+	作者：2726109782@qq.com
+	时间：2019-05-01
+	描述：HTML标签
+-->
+
+<!DOCTYPE html> <!--文档声明-->
+<html>
+	<head>
+		<!--meta 标签指定编码格式-->
+		<meta charset="UTF-8">
+		<title>文本标签</title>
+		<style>
+			/*CSS代码*/
+		</style>
+	</head>
+	<body>
+		         <!--一、 html的文本标签 -->
+		         
+		         
+		<!--1. 标题标签：h1-h6 -->
+		<h1>标题</h1>
+		<h2>标题</h2>
+		<h3>标题</h3>
+		<h4>标题</h4>
+		<h5>标题</h5>
+		<h6>标题</h6>
+		
+		<!--2. 水平线标签-->
+		<hr  />
+		
+		<!--3. 段落标签-->
+		<p>
+		五一放假了  五一放假了
+		</p>
+		<p>
+		学习使人快乐...
+		</p>
+		
+		<!--4. q标签：引用标签 -->
+		<q> 引用文本</q>
+		
+		<!--5. 段落缩进标签-->
+		<blockquote>五一放假了五一放假了五一放假了
+		五一放假了五一放假了五一放假了五一放假了五一放假了
+		五一放假了五一放假了</blockquote>
+		
+		<!--6. 滚动标签: marquee
+			                          属性：behavior: 滚动的方式
+			                             alternate: 来回滚动
+			                             scroll: 沿着滚动方向只滚动一次
+			                            alternate： 滚动速度
+			                            
+			                          属性： direction： 滚动方向(up,down,left,right)
+			                          属性:  scrollamount: 滚动的速度
+			                   标签属性： bgcolor：背景色
+			           ** CSS背景属性： background-color
+		-->
+		<marquee behavior="alternate" direction="right" scrollamount="" bgcolor="pink">
+			我爱胡歌</marquee>
+			
+		<!--7. 粗体标签
+			b标签和strong都是加粗标签，strong在强调时代一种 ”语义“
+		-->	
+		<b>b标签--加粗</b>
+		<strong>strong标签加粗，带一种 “语义”</strong>
+		<!--斜体标签
+			i标签和em都是加粗标签，em在强调时代一种 ”语义“
+		-->
+		<i>i标签--斜体</i>
+		<em>em斜体标签,带一种 ”语义“</em>
+		
+		<!--8. 原样输出标签： pre
+			 
+			 在html中的转义字符：&nbsp;
+			                  注册商标© ---&copy;
+			                  版权所有® ---&reg;
+		-->
+		<pre>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;秋闺词
+			&nbsp;&nbsp;&nbsp;小庭如水月明秋，
+			&nbsp;&nbsp;&nbsp;天远窗虚人自愁，
+			&nbsp;&nbsp;&nbsp;多少深思书不近，
+			&nbsp;&nbsp;&nbsp;要知都在我心头。
+		</pre>
+		
+		<!-- 9. 上下标 标签-->
+		数学公式： x^2   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   x<sup> 2 </sup>
+		<br  /> 化学公式： CO2    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CO<sub> 2 </sub>
+		<br />  xxx公司注册商标&copy;
+		<br />  xxx公司版权所有&reg;
+		<hr />
+		
+		<!--10. 行内标签-->
+		<span>行内标签1</span>
+		<span>行内标签2</span>
+		
+		<br /><br />
+		
+		<!--11. 块标签 占一行空间-->
+		<div>快标签1</div>
+		<div>快标签2</div>
+		
+		<!-- 12. 无序列表标签
+			ul 标签和 li标签
+		        ul标签有一个属性：
+			    type  默认值：disc(实心圆) --circle (空心圆) ---square(正方形)
+		-->
+		<hr />
+		(无序列表)你的目标是：
+		<ul type="disc">
+			<li>阿里</li>
+			<li>网易</li>
+			<li>腾讯</li>
+		</ul>
+		
+		<!--13. 有序列表 ol
+			    ol---type属性 
+		-->
+		<ol>(有序列表)你喜欢的运动：
+			<li>羽毛球</li>
+			<li>睡觉</li>
+			
+		</ol>
+	</body>
+</html>
