@@ -1,3 +1,0 @@
-﻿  test.c
-f:\code-n1\data\data\test.c(82): warning C4013: “gets”未定义；假设外部返回 int
-  DATA.vcxproj -> F:\Code-N1\DATA\Debug\DATA.exe
