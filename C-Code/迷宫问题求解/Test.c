@@ -2,7 +2,6 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-#define MAXSTackSize 70 //栈的最大空间
 #define M 9 //迷宫行
 #define N 8 //迷宫列
 

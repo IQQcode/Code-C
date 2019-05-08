@@ -1,2 +1,4 @@
 ﻿  Test.c
-  迷宫问题求解.vcxproj -> F:\Code-N1\迷宫问题求解\Debug\迷宫问题求解.exe
+  F:\Code-C\C-Code\迷宫问题求解\Test.c: fatal error C1041: 无法打开程序数据库“F:\Code-C\C-Code\迷宫问题求解\Debug\vc142.idb”；如果要将多个 CL.EXE 写入同一个 .PDB 文件，请使用 /FS
+D:\Visual Studio 2017\Visual Studio_2019\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets(423,5): warning MSB8015: 并非所有源文件都是最新的: 由于“F:\Code-C\C-Code\迷宫问题求解\Debug\迷宫问题求解.tlog\CL.command.1.tlog”的内容无效，强制重新生成所有源文件。
+D:\Visual Studio 2017\Visual Studio_2019\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets(423,5): error MSB6006: “CL.exe”已退出，代码为 2。
