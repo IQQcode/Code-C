@@ -270,8 +270,6 @@ public class BNUCoroutine : MonoBehaviour {
 
 MonoBehaviour类是C#脚本的基类，继承自Behaviour类。在C#脚本中，必须直接或间接继承MonoBehaviour类
 
-> 以为类中部分方法
-
 MonoBehaviour类中常用的可重写方法
 
 |    方法     |                说明                |
@@ -314,6 +312,8 @@ Rigidbody组件可以模拟物体在物理效果下的状态. 例如使物体具
 角色控制器是CharacterController类实例化的对象，用于第三人称或第一人称游戏角色控制
 
 
+
+[>>以为部分类中部分方法]
 
 【参考文章】
 
