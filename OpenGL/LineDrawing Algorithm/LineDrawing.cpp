@@ -13,7 +13,7 @@ void display()
 	glColor3f(0.0, 0.0, 0.0);
 	glBegin(GL_LINES);
 	glVertex2i(180, 15);
-	glVertex2i(10, 145);
+	glVertex2i(10, 150);
 	glEnd();
 	glFlush();
 }
