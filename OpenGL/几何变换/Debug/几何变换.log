@@ -1,0 +1,3 @@
+﻿  GeomTrans.cpp
+F:\Code-C\OpenGL\几何变换\GeomTrans.cpp(71,1): warning C4326: “main”的返回类型应为“int”而非“void”
+  几何变换.vcxproj -> F:\Code-C\OpenGL\几何变换\Debug\几何变换.exe
